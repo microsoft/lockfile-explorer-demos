@@ -20,6 +20,14 @@ This branch is part of a tutorial series from the **Lockfile Explorer** [documen
   <img width="700px" alt="dependency graph for this branch" src="./common/images/lfx-demo-doppel-0.svg">
 </div>
 
+<!-- WHEN CREATING A NEW DEMO: Uncomment this section and add your branch/image path -->
+<!--
+## This branch: demo/your-path
+
+<div>
+  <img alt="dependency graph for this branch" src="./common/images/your-file.svg">
+</div>
+-->
 
 ## Installing the monorepo
 
