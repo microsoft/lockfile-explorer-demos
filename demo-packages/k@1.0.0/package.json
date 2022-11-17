@@ -1,0 +1,10 @@
+{
+  "name": "@rushstack/k",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "http://localhost:54321"
+  },
+  "dependencies": {
+    "@rushstack/l": "^1.0.0"
+  }
+}

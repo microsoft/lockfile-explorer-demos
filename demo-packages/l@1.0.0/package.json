@@ -1,0 +1,16 @@
+{
+  "name": "@rushstack/l",
+  "version": "1.0.0",
+  "publishConfig": {
+    "registry": "http://localhost:54321"
+  },
+  "peerDependencies": {
+    "@rushstack/m": "^1.0.0",
+    "@rushstack/n": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@rushstack/n": {
+      "optional": true
+    }
+  }
+}
