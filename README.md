@@ -1,4 +1,4 @@
-# lockfile-explorer-demos: doppel-0 branch
+# lockfile-explorer-demos
 
 <div>
   <br />
@@ -12,6 +12,13 @@
 This branch is part of a tutorial series from the **Lockfile Explorer** [documentation](https://lfx.rushstack.io/).
 
 👉 To report problems with this content, [create a GitHub issue](https://github.com/microsoft/rushstack-websites/issues) in the main [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) monorepo.
+
+
+## This branch: demo/doppel-0
+
+<div>
+  <img width="700px" alt="dependency graph for this branch" src="./common/images/lfx-demo-doppel-0.svg">
+</div>
 
 
 ## Installing the monorepo
