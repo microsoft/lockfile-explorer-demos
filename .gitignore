@@ -63,6 +63,9 @@ jspm_packages/
 .idea/
 *.iml
 
+# Visual Studio Code
+.vscode
+
 # Rush temporary files
 common/deploy/
 common/temp/
@@ -71,3 +74,14 @@ common/autoinstallers/*/.npmrc
 
 # Heft temporary files
 .heft
+
+# Common toolchain intermediate files
+temp
+lib
+lib-amd
+lib-es6
+lib-esnext
+lib-commonjs
+dist
+*.scss.ts
+*.sass.ts
