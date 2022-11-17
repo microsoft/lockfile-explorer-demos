@@ -1,6 +1,6 @@
 {
-  "name": "@rushstack/j",
-  "version": "1.0.0",
+  "name": "@rushstack/n",
+  "version": "3.0.0",
   "publishConfig": {
     "registry": "http://localhost:54321"
   },

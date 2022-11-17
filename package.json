@@ -1,0 +1,12 @@
+{
+  "name": "lockfile-explorer-demos",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "verdaccio --config verdaccio/config.yaml",
+    "publish": "node scripts/publish.js"
+  },
+  "dependencies": {
+    "verdaccio": "^5.16.3"
+  }
+}
