@@ -1,0 +1,8 @@
+{
+  "name": "@rushstack/b",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@rushstack/c": "workspace:*"
+  }
+}
