@@ -1,5 +1,4 @@
-<!-- WHEN CREATING A NEW DEMO: Replace this with your branch name -->
-# lockfile-explorer-demos: _base branch
+# lockfile-explorer-demos
 
 <div>
   <br />
@@ -19,6 +18,14 @@ This branch is part of a tutorial series from the **Lockfile Explorer** [documen
 
 This branch contains the common monorepo configuration that is shared across all the demos.  After updating the `_base` branch, merge your changes into each of the `demo/___` Git branches.
 
+<!-- WHEN CREATING A NEW DEMO: Uncomment this section and add your branch/image path -->
+<!--
+## This branch: demo/your-path
+
+<div>
+  <img alt="dependency graph for this branch" src="./common/images/your-file.svg">
+</div>
+-->
 
 ## Installing the monorepo
 
