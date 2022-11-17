@@ -1,5 +1,4 @@
-<!-- WHEN CREATING A NEW DEMO: Replace this with your branch name -->
-# lockfile-explorer-demos: _base branch
+# lockfile-explorer-demos: doppel-0 branch
 
 <div>
   <br />
@@ -13,11 +12,6 @@
 This branch is part of a tutorial series from the **Lockfile Explorer** [documentation](https://lfx.rushstack.io/).
 
 👉 To report problems with this content, [create a GitHub issue](https://github.com/microsoft/rushstack-websites/issues) in the main [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) monorepo.
-
-<!-- WHEN CREATING A NEW DEMO: Delete this section -->
-## What is the "_base" branch?
-
-This branch contains the common monorepo configuration that is shared across all the demos.  After updating the `_base` branch, merge your changes into each of the `demo/___` Git branches.
 
 
 ## Installing the monorepo
