@@ -1,0 +1,42 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers: {}
+
+  ../../projects/a:
+    specifiers:
+      '@rushstack/b': workspace:*
+    dependencies:
+      '@rushstack/b': link:../b
+
+  ../../projects/b:
+    specifiers:
+      '@rushstack/c': workspace:*
+    dependencies:
+      '@rushstack/c': link:../c
+
+  ../../projects/c:
+    specifiers:
+      '@rushstack/p': ~1.2.3
+      '@rushstack/r': 3.0.0
+    dependencies:
+      '@rushstack/p': 1.2.3
+      '@rushstack/r': 3.0.0
+
+packages:
+
+  /@rushstack/p/1.2.3:
+    resolution: {integrity: sha512-7lN+yq6M/cjOlIG0rH4xuA/BHOe1ZjWBhCqdGn7KkBkd9KJxHNu8tngEkkOewXg35rDvC0k/u71rukDPlLzTnw==}
+    dev: false
+
+  /@rushstack/p/2.1.1:
+    resolution: {integrity: sha512-fBU14MPQfdeFlrDVjuZA8zK2QV97t/0/oIWMJOZY7CWJyKKDXfViA9V5h8LhAWnIUMMUec5NCdD0OKGEe+rn9Q==}
+    dev: false
+
+  /@rushstack/r/3.0.0:
+    resolution: {integrity: sha512-F39tTyjmmJQFnt4BJgVopEIRZ0PQn399w7kkn/w7vVN6qU4AGNGvGNmn3J04zDHdVwlLE2rkbYKvU3dd7GqB1A==}
+    dependencies:
+      '@rushstack/p': 2.1.1
+    dev: false
