@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 importers:
 
@@ -38,15 +38,15 @@ importers:
 packages:
 
   /@rushstack/p/2.0.3:
-    resolution: {integrity: sha512-EJaQNhLBn0Fa+b0Xgg9AuMT6/5fkptdqjZ322P26UyvvHgERiz2FQndv1HXSXf5AFrO9m1X+bhy/JJ4mqvSwhg==}
+    resolution: {integrity: sha512-hWg90O494I5DyrbPxYR2Ml7zUrlXHXYo8KLK8AwYYEuAMcjjUe1zUzeBFt+X07arsGhgPrPabkALMnltNWB2OQ==}
     dev: false
 
   /@rushstack/p/2.1.1:
-    resolution: {integrity: sha512-gop83Ype2xZNFtTlEihPLkpsPQXxVIXVuLW9oRFD3P/A/4/n7jvZ8I+bLp3W8BQNt4CiXPaY5PzLAxMm4z7vCA==}
+    resolution: {integrity: sha512-fBU14MPQfdeFlrDVjuZA8zK2QV97t/0/oIWMJOZY7CWJyKKDXfViA9V5h8LhAWnIUMMUec5NCdD0OKGEe+rn9Q==}
     dev: false
 
   /@rushstack/q/3.0.0_@rushstack+p@2.0.3:
-    resolution: {integrity: sha512-l2TEvdctZHWw1LL7dszDIYYaS24p102Yu9AU1xDtPBZrwOJGan/RZTVfMB+Kaja6F2BrRAA+VJdQjnyVh+D8LQ==}
+    resolution: {integrity: sha512-I3BICJ7r+8lc+buHgdCQiGRDzvyJBOeKrVcpre3qlpbW/mAIumGJK6fzRy3VbkM2DhQvAi27pNG/ijThUfbDnA==}
     peerDependencies:
       '@rushstack/p': ^2.0.0
     dependencies:
@@ -54,7 +54,7 @@ packages:
     dev: false
 
   /@rushstack/q/3.0.0_@rushstack+p@2.1.1:
-    resolution: {integrity: sha512-l2TEvdctZHWw1LL7dszDIYYaS24p102Yu9AU1xDtPBZrwOJGan/RZTVfMB+Kaja6F2BrRAA+VJdQjnyVh+D8LQ==}
+    resolution: {integrity: sha512-I3BICJ7r+8lc+buHgdCQiGRDzvyJBOeKrVcpre3qlpbW/mAIumGJK6fzRy3VbkM2DhQvAi27pNG/ijThUfbDnA==}
     peerDependencies:
       '@rushstack/p': ^2.0.0
     dependencies:
