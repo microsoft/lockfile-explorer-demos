@@ -5,6 +5,7 @@
     "registry": "http://localhost:54321"
   },
   "dependencies": {
-    "@rushstack/k": "^1.0.0"
+    "@rushstack/k": "^1.0.0",
+    "@rushstack/m": "~1.0.0"
   }
 }
