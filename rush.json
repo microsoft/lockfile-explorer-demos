@@ -418,5 +418,14 @@
     //   "reviewCategory": "tools",
     //   "tags": [ "tools" ]
     // }
+
+    {
+      "packageName": "@rushstack/a",
+      "projectFolder": "projects/a"
+    },
+    {
+      "packageName": "@rushstack/b",
+      "projectFolder": "projects/b"
+    }
   ]
 }

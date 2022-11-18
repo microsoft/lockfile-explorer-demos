@@ -13,19 +13,11 @@ This branch is part of a tutorial series from the **Lockfile Explorer** [documen
 
 👉 To report problems with this content, [create a GitHub issue](https://github.com/microsoft/rushstack-websites/issues) in the main [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) monorepo.
 
-<!-- 🚨 WHEN CREATING A NEW DEMO: Uncomment this section and add your branch/image path -->
-<!--
-## This branch: demo/your-path
+## This branch: demo/sbs-0
 
 <div>
-  <img alt="dependency graph for this branch" src="./common/images/your-file.svg">
+  <img alt="dependency graph for this branch" src="./common/images/lfx-demo-sbs-0.svg">
 </div>
--->
-
-<!-- 🚨 WHEN CREATING A NEW DEMO: Delete this section -->
-## What is the "_base" branch?
-
-This branch contains the common monorepo configuration that is shared across all the demos.  After updating the `_base` branch, merge your changes into each of the `demo/___` Git branches.
 
 
 ## Installing the monorepo
