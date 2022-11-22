@@ -422,18 +422,6 @@
     {
       "packageName": "@rushstack/a",
       "projectFolder": "projects/a"
-    },
-    {
-      "packageName": "@rushstack/b",
-      "projectFolder": "projects/b"
-    },
-    {
-      "packageName": "@rushstack/c",
-      "projectFolder": "projects/c"
-    },
-    {
-      "packageName": "@rushstack/d",
-      "projectFolder": "projects/d"
     }
   ]
 }

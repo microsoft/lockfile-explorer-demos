@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@rushstack/b": "workspace:*",
-    "@rushstack/d": "workspace:*"
+    "@rushstack/s": "1.0.0",
+    "@rushstack/t": "1.0.0"
   }
 }

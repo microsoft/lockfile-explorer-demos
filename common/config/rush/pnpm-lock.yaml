@@ -7,33 +7,11 @@ importers:
 
   ../../projects/a:
     specifiers:
-      '@rushstack/b': workspace:*
-      '@rushstack/d': workspace:*
+      '@rushstack/s': 1.0.0
+      '@rushstack/t': 1.0.0
     dependencies:
-      '@rushstack/b': link:../b
-      '@rushstack/d': link:../d
-
-  ../../projects/b:
-    specifiers:
-      '@rushstack/c': workspace:*
-    dependencies:
-      '@rushstack/c': link:../c
-
-  ../../projects/c:
-    specifiers:
-      '@rushstack/p': ~2.0.0
-      '@rushstack/q': 3.0.0
-    dependencies:
-      '@rushstack/p': 2.0.3
-      '@rushstack/q': 3.0.0_@rushstack+p@2.0.3
-
-  ../../projects/d:
-    specifiers:
-      '@rushstack/p': ~2.1.0
-      '@rushstack/q': 3.0.0
-    dependencies:
-      '@rushstack/p': 2.1.1
-      '@rushstack/q': 3.0.0_@rushstack+p@2.1.1
+      '@rushstack/s': 1.0.0
+      '@rushstack/t': 1.0.0
 
 packages:
 
@@ -59,4 +37,18 @@ packages:
       '@rushstack/p': ^2.0.0
     dependencies:
       '@rushstack/p': 2.1.1
+    dev: false
+
+  /@rushstack/s/1.0.0:
+    resolution: {integrity: sha512-P5GBPzOSolwdQ3krPgw1gDqTs4LKzm7c3egOkoyFW70OSsAgwQY3Tr15Nk2598xVbH6irzio/2ytlhVz/oTVSg==}
+    dependencies:
+      '@rushstack/p': 2.0.3
+      '@rushstack/q': 3.0.0_@rushstack+p@2.0.3
+    dev: false
+
+  /@rushstack/t/1.0.0:
+    resolution: {integrity: sha512-PHUJP9nUEYL4WyWKiudZyIspX4CybTs6HIA+T5yZiz63MhSeltsGCBVb5Or3x7OQgmfYG5zI5s5mKLRZCgB63w==}
+    dependencies:
+      '@rushstack/p': 2.1.1
+      '@rushstack/q': 3.0.0_@rushstack+p@2.1.1
     dev: false
