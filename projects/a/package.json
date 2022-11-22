@@ -4,6 +4,6 @@
   "private": true,
   "dependencies": {
     "@rushstack/b": "workspace:*",
-    "@rushstack/p": "^2.0.0"
+    "@rushstack/p": "~2.0.1"
   }
 }

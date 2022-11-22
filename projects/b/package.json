@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@rushstack/p": "~2.0.1"
+    "@rushstack/p": "~2.0.2"
   }
 }

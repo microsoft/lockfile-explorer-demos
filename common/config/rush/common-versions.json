@@ -58,6 +58,6 @@
     // "typescript": [
     //   "~2.4.0"
     // ]
-    "@rushstack/p": ["^2.0.0"]
+    "@rushstack/p": ["~2.0.1"]
   }
 }
