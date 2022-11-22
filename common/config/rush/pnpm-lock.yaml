@@ -7,40 +7,20 @@ importers:
 
   ../../projects/a:
     specifiers:
-      '@rushstack/b': workspace:*
-      '@rushstack/d': workspace:*
+      '@rushstack/s': 2.0.0
+      '@rushstack/t': 2.0.0
     dependencies:
-      '@rushstack/b': link:../b
-      '@rushstack/d': link:../d
-
-  ../../projects/b:
-    specifiers:
-      '@rushstack/c': workspace:*
-    dependencies:
-      '@rushstack/c': link:../c
-
-  ../../projects/c:
-    specifiers:
-      '@rushstack/p': ~2.0.0
-      '@rushstack/r': 4.0.0
-    dependencies:
-      '@rushstack/p': 2.0.3
-      '@rushstack/r': 4.0.0_@rushstack+p@2.0.3
-
-  ../../projects/d:
-    specifiers:
-      '@rushstack/r': 4.0.0
-    dependencies:
-      '@rushstack/r': 4.0.0
+      '@rushstack/s': 2.0.0
+      '@rushstack/t': 2.0.0
 
 packages:
 
   /@rushstack/p/2.0.3:
-    resolution: {integrity: sha512-EJaQNhLBn0Fa+b0Xgg9AuMT6/5fkptdqjZ322P26UyvvHgERiz2FQndv1HXSXf5AFrO9m1X+bhy/JJ4mqvSwhg==}
+    resolution: {integrity: sha512-hWg90O494I5DyrbPxYR2Ml7zUrlXHXYo8KLK8AwYYEuAMcjjUe1zUzeBFt+X07arsGhgPrPabkALMnltNWB2OQ==}
     dev: false
 
   /@rushstack/r/4.0.0:
-    resolution: {integrity: sha512-FaRcoSJPqADYi4J6v7TWci1r518bwrvLzBOz2tCx8WAMCrs3+YUwlKS/j4gPwEZPNsLJ0gwMEEWU4+5qfFrzyQ==}
+    resolution: {integrity: sha512-8EUtjkF+8vkMiOZvRViijyx/x3+Isxy74LAn5lWm0V+hhAIZ/TZXLGet/CMBg2PGUC/kEUpnJd0FZ24TORP+Yg==}
     peerDependencies:
       '@rushstack/p': ^2.0.0
     peerDependenciesMeta:
@@ -49,7 +29,7 @@ packages:
     dev: false
 
   /@rushstack/r/4.0.0_@rushstack+p@2.0.3:
-    resolution: {integrity: sha512-FaRcoSJPqADYi4J6v7TWci1r518bwrvLzBOz2tCx8WAMCrs3+YUwlKS/j4gPwEZPNsLJ0gwMEEWU4+5qfFrzyQ==}
+    resolution: {integrity: sha512-8EUtjkF+8vkMiOZvRViijyx/x3+Isxy74LAn5lWm0V+hhAIZ/TZXLGet/CMBg2PGUC/kEUpnJd0FZ24TORP+Yg==}
     peerDependencies:
       '@rushstack/p': ^2.0.0
     peerDependenciesMeta:
@@ -57,4 +37,19 @@ packages:
         optional: true
     dependencies:
       '@rushstack/p': 2.0.3
+    dev: false
+
+  /@rushstack/s/2.0.0:
+    resolution: {integrity: sha512-rTgqqJsFx5V7222EXHMNR5F1TvdOa3bwjaoC8YbTtCboBgZoJ3gFu8p0rr5CCqt+sNesJcuDz1ObR44ERM/1+g==}
+    dependencies:
+      '@rushstack/p': 2.0.3
+      '@rushstack/r': 4.0.0_@rushstack+p@2.0.3
+    dev: false
+
+  /@rushstack/t/2.0.0:
+    resolution: {integrity: sha512-uhqlTKtYeS7Dw6AmpO7F2/KcMeqGscEgLdocDO4zI6gZ5lh2F+sRDt8JNRnSKGgH1ILnGWhT5m+QCirMmVwRCA==}
+    dependencies:
+      '@rushstack/r': 4.0.0
+    transitivePeerDependencies:
+      - '@rushstack/p'
     dev: false

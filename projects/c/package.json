@@ -1,9 +1,0 @@
-{
-  "name": "@rushstack/c",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "@rushstack/r": "4.0.0",
-    "@rushstack/p": "~2.0.0"
-  }
-}
