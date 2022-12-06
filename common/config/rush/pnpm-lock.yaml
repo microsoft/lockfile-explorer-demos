@@ -8,18 +8,16 @@ importers:
   ../../projects/a:
     specifiers:
       '@rushstack/d': workspace:*
-      '@rushstack/n': ^2.0.0
     dependencies:
       '@rushstack/d': link:../d
-      '@rushstack/n': 2.0.0
 
   ../../projects/b:
     specifiers:
       '@rushstack/d': workspace:*
-      '@rushstack/n': ^2.0.0 || ^3.0.0
+      '@rushstack/n': ^2.0.0
     dependencies:
       '@rushstack/d': link:../d
-      '@rushstack/n': 3.0.0
+      '@rushstack/n': 2.0.0
 
   ../../projects/c:
     specifiers:
@@ -35,9 +33,11 @@ importers:
     specifiers:
       '@rushstack/e': workspace:*
       '@rushstack/j': ^1.0.0
+      '@rushstack/n': ^2.0.0
     dependencies:
       '@rushstack/e': link:../e
-      '@rushstack/j': 1.0.0
+      '@rushstack/j': 1.0.0_@rushstack+n@2.0.0
+      '@rushstack/n': 2.0.0
 
   ../../projects/e:
     specifiers:
@@ -47,10 +47,10 @@ importers:
 
 packages:
 
-  /@rushstack/j/1.0.0:
+  /@rushstack/j/1.0.0_@rushstack+n@2.0.0:
     resolution: {integrity: sha512-biiCY55hkUFdgBsgE2VSS9ZdYsvp848TWtZhVZ/puBt5Fcj4XCRtpjrR9WPYlTbLIpx36gDhCoIRtDR7B/uhng==}
     dependencies:
-      '@rushstack/k': 1.0.0_@rushstack+m@1.0.0
+      '@rushstack/k': 1.0.0_wxpgugna4ivthu7yyu4fmciltu
       '@rushstack/m': 1.0.0
     transitivePeerDependencies:
       - '@rushstack/n'
@@ -60,6 +60,15 @@ packages:
     resolution: {integrity: sha512-plpq5YEW1eRVWkEKX49S3bjSnTgtnMp5wEFylErkdT7ndklPJun7Jr9RElMjE63dM9vOol8EerdKS8qCzirMig==}
     dependencies:
       '@rushstack/l': 1.0.0_@rushstack+m@1.0.0
+    transitivePeerDependencies:
+      - '@rushstack/m'
+      - '@rushstack/n'
+    dev: false
+
+  /@rushstack/k/1.0.0_wxpgugna4ivthu7yyu4fmciltu:
+    resolution: {integrity: sha512-plpq5YEW1eRVWkEKX49S3bjSnTgtnMp5wEFylErkdT7ndklPJun7Jr9RElMjE63dM9vOol8EerdKS8qCzirMig==}
+    dependencies:
+      '@rushstack/l': 1.0.0_wxpgugna4ivthu7yyu4fmciltu
     transitivePeerDependencies:
       - '@rushstack/m'
       - '@rushstack/n'
@@ -75,6 +84,19 @@ packages:
         optional: true
     dependencies:
       '@rushstack/m': 1.0.0
+    dev: false
+
+  /@rushstack/l/1.0.0_wxpgugna4ivthu7yyu4fmciltu:
+    resolution: {integrity: sha512-j9Pr82osu3t22rasnYg2pp/wMjMtg7KXu3WY59onaxHht/E8TgKqTWj4Mas2q+dF2xxs/vho9PdYKRlaXDzkhA==}
+    peerDependencies:
+      '@rushstack/m': ^1.0.0
+      '@rushstack/n': ^2.0.0
+    peerDependenciesMeta:
+      '@rushstack/n':
+        optional: true
+    dependencies:
+      '@rushstack/m': 1.0.0
+      '@rushstack/n': 2.0.0
     dev: false
 
   /@rushstack/m/1.0.0:
