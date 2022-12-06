@@ -14,10 +14,10 @@ This branch is part of a tutorial series from the **Lockfile Explorer** [documen
 👉 To report problems with this content, [create a GitHub issue](https://github.com/microsoft/rushstack-websites/issues) in the main [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) monorepo.
 
 
-## This branch: demo/doppel-2
+## This branch: demo/doppel-3
 
 <div>
-  <img alt="dependency graph for this branch" src="./common/images/lfx-demo-doppel-2.svg">
+  <img alt="dependency graph for this branch" src="./common/images/lfx-demo-doppel-3.svg">
 </div>
 
 
