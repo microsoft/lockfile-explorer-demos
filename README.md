@@ -22,6 +22,16 @@ NPM registry service needs to be running on localhost.
 3. `pnpm start` to launch Verdaccio
 4. In a separate shell window: `pnpm publish-all` to publish all of the [demo NPM packages](./demo-packages/) to localhost.
 
+## Deleting the Verdaccio database
+
+If you modify **package.json** files and want to republish them, you MUST delete the Verdaccio database first:
+
+1. Stop the service if it's already running (CTRL+C)
+2. Delete the temporary files `temp/verdaccio/storage/*` by running: `rm -Rf temp`
+3. Now you can redo the steps above ("Preparing the Verdaccio environment")
+
+NOTE: Before running `rush install` in a demo branch (such as `demo/sample-1`), you should first run `rush purge`; otherwise PNPM will complain that the checksum has changed for the modified packages.
+
 ## Demo branches
 
 - [demo/doppel-1](https://github.com/microsoft/lockfile-explorer-demos/tree/demo/doppel-1)
