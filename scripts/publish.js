@@ -13,8 +13,8 @@ const username = 'test-only';
 const password = 'password';
 const email = 'test-only@example.com';
 
-const verdaccioUrl = 'http://localhost:54321';
-const verdaccioShortUrl = '//localhost:54321';
+const verdaccioUrl = 'http://127.0.0.1:54321';
+const verdaccioShortUrl = '//127.0.0.1:54321';
 
 function publishPackages(npmAccessToken) {
   const registryCliParameter = `--registry=${verdaccioUrl}`;

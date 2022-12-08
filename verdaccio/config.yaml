@@ -157,7 +157,7 @@ server:
 # - "[::1]:4873"                # ipv6
 # - unix:/tmp/verdaccio.sock    # unix socket
 listen:
-  - localhost:54321
+  - 127.0.0.1:54321
 
 # The HTTPS configuration is useful if you do not consider use a HTTP Proxy
 # https://verdaccio.org/docs/configuration#https
