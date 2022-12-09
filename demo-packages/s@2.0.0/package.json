@@ -2,7 +2,7 @@
   "name": "@rushstack/s",
   "version": "2.0.0",
   "publishConfig": {
-    "registry": "http://localhost:54321"
+    "registry": "http://127.0.0.1:54321"
   },
   "dependencies": {
     "@rushstack/r": "4.0.0",
