@@ -26,7 +26,7 @@ importers:
 packages:
 
   /@rushstack/r/4.0.0:
-    resolution: {integrity: sha512-8EUtjkF+8vkMiOZvRViijyx/x3+Isxy74LAn5lWm0V+hhAIZ/TZXLGet/CMBg2PGUC/kEUpnJd0FZ24TORP+Yg==}
+    resolution: {integrity: sha512-V2q/iOefIo0Fw8H8Mp+g4vNUdiFFLtvZp54fWpj4R8MrXCMQUz+D6V+TRNOIO4CgRGpVnVkHqlpOWyqt8HflkQ==}
     peerDependencies:
       '@rushstack/p': ^2.0.0
     peerDependenciesMeta:
