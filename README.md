@@ -3,7 +3,7 @@
 <div>
   <br />
   <a href="https://lfx.rushstack.io/">
-    <img width="200" alt="Rush Lockfile Explorer" src="https://rushstack.io/images/lockfile-explorer.svg">
+    <img width="200" alt="Rush Lockfile Explorer" src="https://lfx.rushstack.io/images/site/lockfile-explorer.svg">
   </a>
   <p />
 </div>
