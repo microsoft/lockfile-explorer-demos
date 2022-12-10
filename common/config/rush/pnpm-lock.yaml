@@ -22,5 +22,5 @@ importers:
 packages:
 
   /@rushstack/p/2.0.3:
-    resolution: {integrity: sha512-hWg90O494I5DyrbPxYR2Ml7zUrlXHXYo8KLK8AwYYEuAMcjjUe1zUzeBFt+X07arsGhgPrPabkALMnltNWB2OQ==}
+    resolution: {integrity: sha512-WVE6NZiUPyA3kbZsh4Ga3/SLOHeM2l2kLyOMv9eNu920AwPlp57p2Ny2a5mYNG10sVhXLscsKF8XOMb9Z3MJ9w==}
     dev: false
