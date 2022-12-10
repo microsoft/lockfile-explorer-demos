@@ -28,11 +28,11 @@ importers:
 packages:
 
   /@rushstack/p/1.2.3:
-    resolution: {integrity: sha512-7lN+yq6M/cjOlIG0rH4xuA/BHOe1ZjWBhCqdGn7KkBkd9KJxHNu8tngEkkOewXg35rDvC0k/u71rukDPlLzTnw==}
+    resolution: {integrity: sha512-OW5tZxwL6ALueJWOMrtdlG5UuD6aY4+iqMVhJut66iNhQ/7eqbM8x8I5Xn4jNHUJRCudCMbCZZ7PMkeYpqWmLA==}
     dev: false
 
   /@rushstack/q/3.0.0_@rushstack+p@1.2.3:
-    resolution: {integrity: sha512-I3BICJ7r+8lc+buHgdCQiGRDzvyJBOeKrVcpre3qlpbW/mAIumGJK6fzRy3VbkM2DhQvAi27pNG/ijThUfbDnA==}
+    resolution: {integrity: sha512-Wi/RFNNtCk9bnh8paK6Gkyo5UNWTaMCc7PAWAPVuMUzCTOXsIrRaz8mMajOkA0MpfrczCCy+0n1J5TRm29qXpg==}
     peerDependencies:
       '@rushstack/p': ^2.0.0
     dependencies:
