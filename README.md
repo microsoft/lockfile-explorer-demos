@@ -8,31 +8,24 @@
   <p />
 </div>
 
-This branch is part of a tutorial series from the **Lockfile Explorer** [documentation](https://lfx.rushstack.io/).
+This branch is part of
+[a tutorial series](https://lfx.rushstack.io/pages/scenarios/demos_repo/)
+from the **Lockfile Explorer** documentation.
 
 👉 To report problems with this content, [create a GitHub issue](https://github.com/microsoft/rushstack-websites/issues) in the main [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) monorepo.
 
-## Preparing the Verdaccio environment
+## Instructions
 
-If you want to use `rush install` or `rush update` in the demo branches, the [Verdaccio](https://verdaccio.org/)
-NPM registry service needs to be running on localhost.
+This `main` branch should be cloned into a folder named `lockfile-explorer-demos-verdaccio`,
+so that the `demo/___` branch can be cloned into a folder named `lockfile-explorer-demos`.
 
-1. Clone the `main` branch of this repo
-2. `pnpm install`
-3. `pnpm start` to launch Verdaccio
-4. In a separate shell window: `pnpm publish-all` to publish all of the [demo NPM packages](./demo-packages/) to localhost.
-
-## Deleting the Verdaccio database
-
-If you modify **package.json** files and want to republish them, you MUST delete the Verdaccio database first:
-
-1. Stop the service if it's already running (CTRL+C)
-2. Delete the temporary files `temp/verdaccio/storage/*` by running: `rm -Rf temp`
-3. Now you can redo the steps above ("Preparing the Verdaccio environment")
-
-NOTE: Before running `rush install` in a demo branch (such as `demo/sample-1`), you should first run `rush purge`; otherwise PNPM will complain that the checksum has changed for the modified packages.
+Please see the Lockfile Explorer
+[Demos repository](https://lfx.rushstack.io/pages/scenarios/demos_repo/)
+documentation for complete setup instructions, as well as explanations of each demo branch.
 
 ## Demo branches
+
+Here's a quick listing of the demo branches in this repository:
 
 - [demo/doppel-1](https://github.com/microsoft/lockfile-explorer-demos/tree/demo/doppel-1)
 - [demo/doppel-2](https://github.com/microsoft/lockfile-explorer-demos/tree/demo/doppel-2)
