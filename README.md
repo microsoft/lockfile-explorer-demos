@@ -9,7 +9,9 @@
 </div>
 
 
-This branch is part of a tutorial series from the **Lockfile Explorer** [documentation](https://lfx.rushstack.io/).
+This branch is part of
+[a tutorial series](https://lfx.rushstack.io/pages/scenarios/demos_repo/)
+from the **Lockfile Explorer** documentation.
 
 👉 To report problems with this content, [create a GitHub issue](https://github.com/microsoft/rushstack-websites/issues) in the main [microsoft/rushstack-websites](https://github.com/microsoft/rushstack-websites/issues) monorepo.
 
@@ -20,13 +22,16 @@ This branch is part of a tutorial series from the **Lockfile Explorer** [documen
 </div>
 
 
-## Installing the monorepo
+## Instructions
 
 This is a [Rush](https://rushjs.io) monorepo that uses the [PNPM](https://pnpm.io/) package manager.
+Because it relies on locally published NPM packages:
 
-1. Install the Rush tool: `pnpm install --global @microsoft/rush` or `npm install --global @microsoft/rush`
-2. Start the [Verdaccio](https://verdaccio.org/) localhost registry. (In a separate shell window, clone the `main` branch of this repo in a separate folder, then run `pnpm install && pnpm start` in that folder.)
-3. Install the monorepo dependencies by running `rush install` in this folder
+👉 You must launch the Verdaccio service before installing; otherwise `rush install` will report `ECONNREFUSED` errors.
+
+Please see the Lockfile Explorer
+[Demos repository](https://lfx.rushstack.io/pages/scenarios/demos_repo/)
+documentation for complete setup instructions, as well as explanations of each demo branch.
 
 
 ## Contributor Notice
