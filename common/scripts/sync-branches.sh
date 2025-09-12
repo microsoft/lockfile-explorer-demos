@@ -14,8 +14,8 @@ function sync-demo {
     then
         echo !!! The $1 branch is already up to date.
     else
-        echo !!! git merge remotes/origin/demo/_base
-        git merge remotes/origin/demo/_base
+        echo !!! git merge remotes/origin/demo/_base --no-edit
+        git merge remotes/origin/demo/_base --no-edit
 
         echo !!! git push
         git push
