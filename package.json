@@ -2,12 +2,16 @@
   "name": "lockfile-explorer-demos",
   "version": "0.0.0",
   "private": true,
+  "packageManager": "pnpm@8",
+  "engines": {
+    "pnpm": "8.x"
+  },
   "scripts": {
     "start": "verdaccio --config verdaccio/config.yaml",
     "publish-all": "node scripts/publish.js"
   },
   "dependencies": {
     "npm-registry-client": "^8.6.0",
-    "verdaccio": "^5.16.3"
+    "verdaccio": "^6.1.6"
   }
 }
