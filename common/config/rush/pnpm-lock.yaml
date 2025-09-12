@@ -1,26 +1,30 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
 
 importers:
 
-  .:
-    specifiers: {}
+  .: {}
 
   ../../projects/a:
-    specifiers:
-      '@rushstack/b': workspace:*
-      '@rushstack/p': ~2.0.1
     dependencies:
-      '@rushstack/b': link:../b
-      '@rushstack/p': 2.0.3
+      '@rushstack/b':
+        specifier: workspace:*
+        version: link:../b
+      '@rushstack/p':
+        specifier: ~2.0.1
+        version: 2.0.3
 
   ../../projects/b:
-    specifiers:
-      '@rushstack/p': ~2.0.2
     dependencies:
-      '@rushstack/p': 2.0.3
+      '@rushstack/p':
+        specifier: ~2.0.2
+        version: 2.0.3
 
 packages:
 
-  /@rushstack/p/2.0.3:
-    resolution: {integrity: sha512-WVE6NZiUPyA3kbZsh4Ga3/SLOHeM2l2kLyOMv9eNu920AwPlp57p2Ny2a5mYNG10sVhXLscsKF8XOMb9Z3MJ9w==}
+  /@rushstack/p@2.0.3:
+    resolution: {integrity: sha512-pdJQ35bUlW+qGN5V63JGgjq8dHqGHXQ6gFjOXxNtOjg1iojoQQ1U1E7+6XzXURpdFtCVYvmYKV+x1/67tQkyxA==}
     dev: false
