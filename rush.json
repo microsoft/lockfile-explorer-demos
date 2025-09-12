@@ -16,7 +16,7 @@
    * path segment in the "$schema" field for all your Rush config files.  This will ensure
    * correct error-underlining and tab-completion for editors such as VS Code.
    */
-  "rushVersion": "5.83.3",
+  "rushVersion": "5.158.1",
 
   /**
    * The next field selects which package manager should be installed and determines its version.
@@ -26,7 +26,7 @@
    * Specify one of: "pnpmVersion", "npmVersion", or "yarnVersion".  See the Rush documentation
    * for details about these alternatives.
    */
-  "pnpmVersion": "7.16.1",
+  "pnpmVersion": "8.15.9",
 
   // "npmVersion": "6.14.15",
   // "yarnVersion": "1.9.4",
@@ -42,7 +42,15 @@
    * LTS schedule: https://nodejs.org/en/about/releases/
    * LTS versions: https://nodejs.org/en/download/releases/
    */
-  "nodeSupportedVersionRange": ">=12.13.0 <13.0.0 || >=14.15.0 <15.0.0 || >=16.13.0 <17.0.0",
+  "nodeSupportedVersionRange": ">=18.20.3 <19.0.0 || >=20.14.0 <21.0.0",
+
+  /**
+   * If the version check above fails, Rush will display a message showing the current
+   * node version and the supported version range. You can use this setting to provide
+   * additional instructions that will display below the warning, if there's a specific
+   * tool or script you'd like the user to use to get in line with the expected version.
+   */
+  // "nodeSupportedVersionInstructions": "Run 'nvs use' to switch to the expected node version.",
 
   /**
    * Odd-numbered major versions of Node.js are experimental.  Even-numbered releases
@@ -58,17 +66,11 @@
   // "suppressNodeLtsWarning": false,
 
   /**
-   * If you would like the version specifiers for your dependencies to be consistent, then
-   * uncomment this line. This is effectively similar to running "rush check" before any
-   * of the following commands:
-   *
-   *   rush install, rush update, rush link, rush version, rush publish
-   *
-   * In some cases you may want this turned on, but need to allow certain packages to use a different
-   * version. In those cases, you will need to add an entry to the "allowedAlternativeVersions"
-   * section of the common-versions.json.
+   * Rush normally prints a warning if it detects that the current version is not one published to the
+   * public npmjs.org registry. If you need to block calls to the npm registry, you can use this setting to disable
+   * Rush's check.
    */
-  "ensureConsistentVersions": true,
+  // "suppressRushIsPublicVersionCheck": false,
 
   /**
    * Large monorepos can become intimidating for newcomers if project folder paths don't follow
@@ -189,11 +191,11 @@
     // "changeLogUpdateCommitMessage": "Update changelogs [skip ci]",
 
     /**
-     * The commit message to use when commiting changefiles during 'rush change --commit'
+     * The commit message to use when committing changefiles during 'rush change --commit'
      *
      * If no commit message is set it will default to 'Rush change'
      */
-    // "changefilesCommitMessage": "Rush change"
+     // "changefilesCommitMessage": "Rush change"
   },
 
   "repository": {
@@ -232,26 +234,36 @@
    */
   "eventHooks": {
     /**
-     * The list of shell commands to run before the Rush installation starts
+     * A list of shell commands to run before "rush install" or "rush update" starts installation
      */
     "preRushInstall": [
       // "common/scripts/pre-rush-install.js"
     ],
 
     /**
-     * The list of shell commands to run after the Rush installation finishes
+     * A list of shell commands to run after "rush install" or "rush update" finishes installation
      */
     "postRushInstall": [],
 
     /**
-     * The list of shell commands to run before the Rush build command starts
+     * A list of shell commands to run before "rush build" or "rush rebuild" starts building
      */
     "preRushBuild": [],
 
     /**
-     * The list of shell commands to run after the Rush build command finishes
+     * A list of shell commands to run after "rush build" or "rush rebuild" finishes building
      */
-    "postRushBuild": []
+    "postRushBuild": [],
+
+    /**
+     * A list of shell commands to run before the "rushx" command starts
+     */
+    "preRushx": [],
+
+    /**
+     * A list of shell commands to run after the "rushx" command finishes
+     */
+    "postRushx": []
   },
 
   /**
@@ -271,7 +283,7 @@
    *
    * For more details and instructions, see this article:  https://rushjs.io/pages/advanced/installation_variants/
    */
-  "variants": [
+   "variants": [
     // {
     //   /**
     //    * The folder name for this variant.
@@ -331,6 +343,13 @@
     //    * The path to the project folder, relative to the rush.json config file.
     //    */
     //   "projectFolder": "apps/my-app",
+    //
+    //   /**
+    //    * This field is only used if "subspacesEnabled" is true in subspaces.json.
+    //    * It specifies the subspace that this project belongs to.  If omitted, then the
+    //    * project belongs to the "default" subspace.
+    //    */
+    //   // "subspaceName": "my-subspace",
     //
     //   /**
     //    * An optional category for usage in the "browser-approved-packages.json"
