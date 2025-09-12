@@ -1,93 +1,80 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
 
 importers:
 
-  .:
-    specifiers: {}
+  .: {}
 
   ../../projects/a:
-    specifiers:
-      '@rushstack/d': workspace:*
     dependencies:
-      '@rushstack/d': link:../d
+      '@rushstack/d':
+        specifier: workspace:*
+        version: link:../d
 
   ../../projects/b:
-    specifiers:
-      '@rushstack/d': workspace:*
-      '@rushstack/n': ^2.0.0
     dependencies:
-      '@rushstack/d': link:../d
-      '@rushstack/n': 2.0.0
+      '@rushstack/d':
+        specifier: workspace:*
+        version: link:../d
+      '@rushstack/n':
+        specifier: ^2.0.0
+        version: 2.0.0
 
   ../../projects/c:
-    specifiers:
-      '@rushstack/e': workspace:*
-      '@rushstack/k': ^1.0.0
-      '@rushstack/m': ~1.0.0
     dependencies:
-      '@rushstack/e': link:../e
-      '@rushstack/k': 1.0.0_@rushstack+m@1.0.0
-      '@rushstack/m': 1.0.0
+      '@rushstack/e':
+        specifier: workspace:*
+        version: link:../e
+      '@rushstack/k':
+        specifier: ^1.0.0
+        version: 1.0.0(@rushstack/m@1.0.0)(@rushstack/n@2.0.0)
+      '@rushstack/m':
+        specifier: ~1.0.0
+        version: 1.0.0
 
   ../../projects/d:
-    specifiers:
-      '@rushstack/e': workspace:*
-      '@rushstack/j': ^1.0.0
-      '@rushstack/n': ^2.0.0
     dependencies:
-      '@rushstack/e': link:../e
-      '@rushstack/j': 1.0.0_@rushstack+n@2.0.0
-      '@rushstack/n': 2.0.0
+      '@rushstack/e':
+        specifier: workspace:*
+        version: link:../e
+      '@rushstack/j':
+        specifier: ^1.0.0
+        version: 1.0.0(@rushstack/n@2.0.0)
+      '@rushstack/n':
+        specifier: ^2.0.0
+        version: 2.0.0
 
   ../../projects/e:
-    specifiers:
-      '@rushstack/n': ^3.0.0
     dependencies:
-      '@rushstack/n': 3.0.0
+      '@rushstack/n':
+        specifier: ^3.0.0
+        version: 3.0.0
 
 packages:
 
-  /@rushstack/j/1.0.0_@rushstack+n@2.0.0:
-    resolution: {integrity: sha512-biiCY55hkUFdgBsgE2VSS9ZdYsvp848TWtZhVZ/puBt5Fcj4XCRtpjrR9WPYlTbLIpx36gDhCoIRtDR7B/uhng==}
+  /@rushstack/j@1.0.0(@rushstack/n@2.0.0):
+    resolution: {integrity: sha512-D799Tv8advqKGl9u/j1x1cTG1pef6uY9CE7ETPqz9RHSNTRBL4Ftw98M95EK/dWS41OFlJ+eNGVwzWn3PjL85g==}
     dependencies:
-      '@rushstack/k': 1.0.0_wxpgugna4ivthu7yyu4fmciltu
+      '@rushstack/k': 1.0.0(@rushstack/m@1.0.0)(@rushstack/n@2.0.0)
       '@rushstack/m': 1.0.0
     transitivePeerDependencies:
       - '@rushstack/n'
     dev: false
 
-  /@rushstack/k/1.0.0_@rushstack+m@1.0.0:
-    resolution: {integrity: sha512-plpq5YEW1eRVWkEKX49S3bjSnTgtnMp5wEFylErkdT7ndklPJun7Jr9RElMjE63dM9vOol8EerdKS8qCzirMig==}
+  /@rushstack/k@1.0.0(@rushstack/m@1.0.0)(@rushstack/n@2.0.0):
+    resolution: {integrity: sha512-HIap/n3FPoZMx+J6GbzziJTaVd8Q0FpHXUgYU1EHSM7Sy6suMbCxx6KSRuuM0Iv2BB3rht5jn6yv2l7pGBpXAA==}
     dependencies:
-      '@rushstack/l': 1.0.0_@rushstack+m@1.0.0
+      '@rushstack/l': 1.0.0(@rushstack/m@1.0.0)(@rushstack/n@2.0.0)
     transitivePeerDependencies:
       - '@rushstack/m'
       - '@rushstack/n'
     dev: false
 
-  /@rushstack/k/1.0.0_wxpgugna4ivthu7yyu4fmciltu:
-    resolution: {integrity: sha512-plpq5YEW1eRVWkEKX49S3bjSnTgtnMp5wEFylErkdT7ndklPJun7Jr9RElMjE63dM9vOol8EerdKS8qCzirMig==}
-    dependencies:
-      '@rushstack/l': 1.0.0_wxpgugna4ivthu7yyu4fmciltu
-    transitivePeerDependencies:
-      - '@rushstack/m'
-      - '@rushstack/n'
-    dev: false
-
-  /@rushstack/l/1.0.0_@rushstack+m@1.0.0:
-    resolution: {integrity: sha512-j9Pr82osu3t22rasnYg2pp/wMjMtg7KXu3WY59onaxHht/E8TgKqTWj4Mas2q+dF2xxs/vho9PdYKRlaXDzkhA==}
-    peerDependencies:
-      '@rushstack/m': ^1.0.0
-      '@rushstack/n': ^2.0.0
-    peerDependenciesMeta:
-      '@rushstack/n':
-        optional: true
-    dependencies:
-      '@rushstack/m': 1.0.0
-    dev: false
-
-  /@rushstack/l/1.0.0_wxpgugna4ivthu7yyu4fmciltu:
-    resolution: {integrity: sha512-j9Pr82osu3t22rasnYg2pp/wMjMtg7KXu3WY59onaxHht/E8TgKqTWj4Mas2q+dF2xxs/vho9PdYKRlaXDzkhA==}
+  /@rushstack/l@1.0.0(@rushstack/m@1.0.0)(@rushstack/n@2.0.0):
+    resolution: {integrity: sha512-qJvPD0WLK6P+4KmczcuKA0f/6oUpZXYWYPIvMNJfasFy3DGMoUHg+3TSpisqQQb7OuWzf1mHQCG/suYiIeXQaQ==}
     peerDependencies:
       '@rushstack/m': ^1.0.0
       '@rushstack/n': ^2.0.0
@@ -99,14 +86,14 @@ packages:
       '@rushstack/n': 2.0.0
     dev: false
 
-  /@rushstack/m/1.0.0:
-    resolution: {integrity: sha512-xNO/K6r+U0a187wsNwg8Ib8rJTX7y4pA+5dgHD0ClRx67FaKURvHmP+ERAbV9Vfb6bCyOdAGVco1NusnhN2YAA==}
+  /@rushstack/m@1.0.0:
+    resolution: {integrity: sha512-iZtUynf07U6UNf4QeYFdCNq7t+VTB3YyRb66v2U0uc3yP486dbXFO4LCCyqPpCsRlkwt4y/hKJH7lsODB+ISMA==}
     dev: false
 
-  /@rushstack/n/2.0.0:
-    resolution: {integrity: sha512-qS6Mj9W/XfZcA7bsTTiOPomV02qVS4NCIZ9tcXcrSZPJDAGGPDrWTGjDQvOmal67JD/nJPFrgfSVCKWCuzp8WQ==}
+  /@rushstack/n@2.0.0:
+    resolution: {integrity: sha512-cOGhNwbSaZv6hcfuUtut43vENNyGAPlhNU7r2kixj7dKKeyiQ1XlyhABxvFya2qEyFDRjbFW7/gSMrFmtLAxRg==}
     dev: false
 
-  /@rushstack/n/3.0.0:
-    resolution: {integrity: sha512-zWEo2qYbC47lRhXXDF2KMlbJdp3cg5vkeeFs0nXSVHYcbGx60F+ZcAbwXto6LXaJZzOuPeCAawHZACOLbOe8xw==}
+  /@rushstack/n@3.0.0:
+    resolution: {integrity: sha512-GyiYvYT2KHlVlsiQ1Z+Lgt7lB5SR6axKASYKaj9qM+ycvpHTs8MoHJGp/Mbt+Iqrjfjlk3t4cXzLvftqFbPWuw==}
     dev: false
