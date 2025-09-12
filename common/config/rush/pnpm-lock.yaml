@@ -1,42 +1,46 @@
-lockfileVersion: 5.4
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: false
+  excludeLinksFromLockfile: false
 
 importers:
 
-  .:
-    specifiers: {}
+  .: {}
 
   ../../projects/a:
-    specifiers:
-      '@rushstack/b': workspace:*
     dependencies:
-      '@rushstack/b': link:../b
+      '@rushstack/b':
+        specifier: workspace:*
+        version: link:../b
 
   ../../projects/b:
-    specifiers:
-      '@rushstack/c': workspace:*
     dependencies:
-      '@rushstack/c': link:../c
+      '@rushstack/c':
+        specifier: workspace:*
+        version: link:../c
 
   ../../projects/c:
-    specifiers:
-      '@rushstack/p': ~1.2.3
-      '@rushstack/r': 3.0.0
     dependencies:
-      '@rushstack/p': 1.2.3
-      '@rushstack/r': 3.0.0
+      '@rushstack/p':
+        specifier: ~1.2.3
+        version: 1.2.3
+      '@rushstack/r':
+        specifier: 3.0.0
+        version: 3.0.0
 
 packages:
 
-  /@rushstack/p/1.2.3:
-    resolution: {integrity: sha512-OW5tZxwL6ALueJWOMrtdlG5UuD6aY4+iqMVhJut66iNhQ/7eqbM8x8I5Xn4jNHUJRCudCMbCZZ7PMkeYpqWmLA==}
+  /@rushstack/p@1.2.3:
+    resolution: {integrity: sha512-h2OnLz0i0LPni6pUnzhlypOfd8V8IyNygL9f4NF3DtS5pW26NRSPXaM9JXooZWsp55JR/WpswSUF+uVJghRaWA==}
     dev: false
 
-  /@rushstack/p/2.1.1:
-    resolution: {integrity: sha512-TTdvaQetY5r0/3FrXAP/1Sq+9IOMjKoNo8lNK1Z2eDkQfbkD64ggT0rSS0BCxjRyUQgHAy+xr3zMN9NNFI/6mQ==}
+  /@rushstack/p@2.1.1:
+    resolution: {integrity: sha512-MOVuVG8cEGdRdkqiybDBZi6FM1v4g0cobtzA7AMkaPzvjyQpBsWgiy6TbO7LigFj4gAL5GexxqWuUmPWkPZWDw==}
     dev: false
 
-  /@rushstack/r/3.0.0:
-    resolution: {integrity: sha512-j9buNiwxUOMmfm0/b8N+kk0ztzlQrFUJHy7BCZ2LyM+Vfrw2YINPqLgOhqnf3CXcScUEmzaSmw1k6Y2UbCx8Mw==}
+  /@rushstack/r@3.0.0:
+    resolution: {integrity: sha512-r0UehNgQOX7WcRWVNesU7qC00l11pemoeeLQizAxfcUoTLhy+vCRgiJbRXRimO2U3qHg12yJyPDDZff8MNFO8w==}
     dependencies:
       '@rushstack/p': 2.1.1
     dev: false
